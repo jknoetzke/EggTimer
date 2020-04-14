@@ -14,6 +14,7 @@
 		521ACC3C2444EDA9001137C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521ACC3A2444EDA9001137C1 /* Main.storyboard */; };
 		521ACC482444EDA9001137C1 /* EggTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521ACC472444EDA9001137C1 /* EggTimerTests.swift */; };
 		521ACC532444EDA9001137C1 /* EggTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521ACC522444EDA9001137C1 /* EggTimerUITests.swift */; };
+		521ACC6124450D47001137C1 /* PrefsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521ACC6024450D47001137C1 /* PrefsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		521ACC4E2444EDA9001137C1 /* EggTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EggTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		521ACC522444EDA9001137C1 /* EggTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimerUITests.swift; sourceTree = "<group>"; };
 		521ACC542444EDA9001137C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		521ACC6024450D47001137C1 /* PrefsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				521ACC312444EDA8001137C1 /* AppDelegate.swift */,
 				521ACC332444EDA8001137C1 /* ViewController.swift */,
+				521ACC6024450D47001137C1 /* PrefsViewController.swift */,
 				521ACC382444EDA9001137C1 /* Assets.xcassets */,
 				521ACC3A2444EDA9001137C1 /* Main.storyboard */,
 				521ACC3D2444EDA9001137C1 /* Info.plist */,
@@ -260,6 +263,7 @@
 				521ACC342444EDA8001137C1 /* ViewController.swift in Sources */,
 				521ACC322444EDA8001137C1 /* AppDelegate.swift in Sources */,
 				521ACC372444EDA8001137C1 /* EggTimer.xcdatamodeld in Sources */,
+				521ACC6124450D47001137C1 /* PrefsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
