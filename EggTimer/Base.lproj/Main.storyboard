@@ -24,7 +24,7 @@
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
                                         <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
                                             <connections>
-                                                <segue destination="ciZ-0t-JLO" kind="show" id="N1V-cv-D9d"/>
+                                                <segue destination="1wq-b6-KcB" kind="show" id="b1Z-hs-Goh"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
@@ -137,140 +137,6 @@
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
         <!--Window Controller-->
-        <scene sceneID="5Xv-Z5-bau">
-            <objects>
-                <windowController id="ciZ-0t-JLO" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Njn-A2-EHe">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
-                        <rect key="contentRect" x="425" y="461" width="416" height="214"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
-                        <connections>
-                            <outlet property="delegate" destination="ciZ-0t-JLO" id="07J-kj-eEJ"/>
-                        </connections>
-                    </window>
-                    <connections>
-                        <segue destination="16a-ja-Ugo" kind="relationship" relationship="window.shadowedContentViewController" id="ArX-xE-e1z"/>
-                    </connections>
-                </windowController>
-                <customObject id="Q0E-mL-T3M" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="585" y="402"/>
-        </scene>
-        <!--Prefs View Controller-->
-        <scene sceneID="fSR-D8-i9p">
-            <objects>
-                <viewController id="16a-ja-Ugo" customClass="PrefsViewController" customModule="EggTimer" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="exA-9d-LNO">
-                        <rect key="frame" x="0.0" y="0.0" width="416" height="214"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1OQ-6B-1CP">
-                                <rect key="frame" x="18" y="178" width="214" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Preset Egg Timings" id="rdR-i3-Deu">
-                                    <font key="font" usesAppearanceFont="YES"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efo-nw-OvO">
-                                <rect key="frame" x="18" y="146" width="382" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <popUpButtonCell key="cell" type="push" title="For custardy yet firm soft-boiled eggs: 6 minutes" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="6" imageScaling="proportionallyDown" inset="2" selectedItem="paf-dx-Xte" id="2S3-Dl-PkP">
-                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                    <menu key="menu" id="mRT-uB-NnR">
-                                        <items>
-                                            <menuItem title="For runny soft-boiled eggs (barely set whites): 3 minutes" tag="3" id="KDk-rP-GM5"/>
-                                            <menuItem title="For slightly runny soft-boiled eggs: 4 minutes" tag="4" id="yrJ-0d-brW"/>
-                                            <menuItem title="For custardy yet firm soft-boiled eggs: 6 minutes" state="on" tag="6" id="paf-dx-Xte"/>
-                                            <menuItem title="For firm yet still creamy hard-boiled eggs: 10 minutes" tag="10" id="tbN-Kr-bpl">
-                                                <modifierMask key="keyEquivalentModifierMask"/>
-                                            </menuItem>
-                                            <menuItem title="For very firm hard-boiled eggs: 15 minutes" tag="15" id="TyO-aG-hp4">
-                                                <modifierMask key="keyEquivalentModifierMask"/>
-                                            </menuItem>
-                                            <menuItem isSeparatorItem="YES" id="8nk-Br-Whl"/>
-                                            <menuItem title="Custom" id="1YC-yO-Rpm">
-                                                <modifierMask key="keyEquivalentModifierMask"/>
-                                            </menuItem>
-                                        </items>
-                                    </menu>
-                                </popUpButtonCell>
-                                <connections>
-                                    <action selector="popupValueChanged:" target="16a-ja-Ugo" id="Cxf-bX-Eu0"/>
-                                </connections>
-                            </popUpButton>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wkd-yf-QDs">
-                                <rect key="frame" x="20" y="96" width="123" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Custom Egg Timing" id="FOl-J6-9cc">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hu0-FM-G44">
-                                <rect key="frame" x="147" y="96" width="64" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="6 Minutes" id="9ES-Lj-zdm">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xvg-FB-PFz">
-                                <rect key="frame" x="343" y="7" width="59" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FyI-eo-0pH">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                    <string key="keyEquivalent" base64-UTF8="YES">
-DQ
-</string>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="okButtonClicked:" target="16a-ja-Ugo" id="eRh-Ti-gf8"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xKb-oX-USB">
-                                <rect key="frame" x="261" y="7" width="82" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="O4O-PX-4aO">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                    <string key="keyEquivalent" base64-UTF8="YES">
-Gw
-</string>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="cancelButtonClicked:" target="16a-ja-Ugo" id="43q-Of-Ele"/>
-                                </connections>
-                            </button>
-                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dxo-6p-isv">
-                                <rect key="frame" x="18" y="64" width="380" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" enabled="NO" state="on" alignment="left" minValue="1" maxValue="25" doubleValue="25" tickMarkPosition="above" numberOfTickMarks="25" allowsTickMarkValuesOnly="YES" sliderType="linear" id="vsl-vf-dNK"/>
-                                <connections>
-                                    <action selector="sliderValueChanged:" target="16a-ja-Ugo" id="dU4-hG-ZGY"/>
-                                </connections>
-                            </slider>
-                        </subviews>
-                    </view>
-                    <connections>
-                        <outlet property="customSlider" destination="Dxo-6p-isv" id="Lf3-xG-UjE"/>
-                        <outlet property="customTextField" destination="exA-9d-LNO" id="1lj-Ky-cvx"/>
-                        <outlet property="okButtonClicked" destination="Xvg-FB-PFz" id="Ez4-GE-Za2"/>
-                        <outlet property="popupValueChanged" destination="efo-nw-OvO" id="Uax-cn-9Y9"/>
-                        <outlet property="presetsPopup" destination="efo-nw-OvO" id="Q6Y-2A-zm5"/>
-                        <outlet property="sliderValueChanged" destination="Dxo-6p-isv" id="GTJ-OZ-bdD"/>
-                    </connections>
-                </viewController>
-                <customObject id="M1t-5a-kRg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="585" y="943"/>
-        </scene>
-        <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
@@ -291,6 +157,129 @@ Gw
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="74" y="327"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="jIN-sI-NBn">
+            <objects>
+                <windowController id="1wq-b6-KcB" sceneMemberID="viewController">
+                    <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Yjq-Bk-v2B">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="2345" y="410" width="416" height="214"/>
+                        <rect key="screenRect" x="1920" y="-51" width="2560" height="1417"/>
+                        <connections>
+                            <outlet property="delegate" destination="1wq-b6-KcB" id="LAc-pv-9iZ"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="rvi-rZ-kt4" kind="relationship" relationship="window.shadowedContentViewController" id="Hwg-Tg-6KQ"/>
+                    </connections>
+                </windowController>
+                <customObject id="zj0-g8-lec" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="551" y="247"/>
+        </scene>
+        <!--Prefs View Controller-->
+        <scene sceneID="AcH-6B-ZJI">
+            <objects>
+                <viewController id="rvi-rZ-kt4" customClass="PrefsViewController" customModule="EggTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="5Cn-nK-maS">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="afF-3i-lfp">
+                                <rect key="frame" x="14" y="13" width="82" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YLr-Vg-unj">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="cancelButtonClicked:" target="rvi-rZ-kt4" id="2eo-22-8Yn"/>
+                                </connections>
+                            </button>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R3h-Il-L24">
+                                <rect key="frame" x="18" y="192" width="445" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="For runny soft-boiled eggs (barely set whites): 3 minutes" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="3" imageScaling="proportionallyDown" inset="2" selectedItem="KLc-dA-KxJ" id="I9X-1Y-PVo">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <menu key="menu" id="lWS-bW-19s">
+                                        <items>
+                                            <menuItem title="For runny soft-boiled eggs (barely set whites): 3 minutes" state="on" tag="3" id="KLc-dA-KxJ"/>
+                                            <menuItem title="For slightly runny soft-boiled eggs: 4 minutes" tag="4" id="9tw-f5-qY3"/>
+                                            <menuItem title="For custardy yet firm soft-boiled eggs: 6 minutes" tag="6" id="w9E-XT-xTR"/>
+                                            <menuItem title="For firm yet still creamy hard-boiled eggs: 10 minutes" tag="10" id="EVd-gT-GxB">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="For very firm hard-boiled eggs: 15 minutes" tag="15" id="sMl-dp-D2V">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem isSeparatorItem="YES" id="DRk-eO-i5b"/>
+                                            <menuItem title="Custom" id="dIy-Jb-H94">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="popupValueChanged:" target="rvi-rZ-kt4" id="QkS-rb-drC"/>
+                                </connections>
+                            </popUpButton>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3j-Un-gwn">
+                                <rect key="frame" x="18" y="224" width="122" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Preset Egg Timings" id="MMz-Lq-vQp">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TFr-MY-yV4">
+                                <rect key="frame" x="18" y="137" width="130" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Custom Egg Timings" id="1ie-Ff-QBy">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Zc-ZN-1pP">
+                                <rect key="frame" x="18" y="112" width="444" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <sliderCell key="cell" enabled="NO" state="on" alignment="left" minValue="1" maxValue="25" doubleValue="6" tickMarkPosition="above" numberOfTickMarks="25" allowsTickMarkValuesOnly="YES" sliderType="linear" id="sBc-rK-hXu"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" target="rvi-rZ-kt4" id="lIg-6x-1zS"/>
+                                </connections>
+                            </slider>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xe5-Wc-Ulp">
+                                <rect key="frame" x="396" y="13" width="59" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="w0p-kI-klb">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="okButtonClicked:" target="rvi-rZ-kt4" id="i7G-QP-rEa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="customSlider" destination="1Zc-ZN-1pP" id="qTY-UG-4AK"/>
+                        <outlet property="customTextField" destination="TFr-MY-yV4" id="tUg-JZ-vc6"/>
+                        <outlet property="presetsPopup" destination="R3h-Il-L24" id="2ed-ce-S9h"/>
+                    </connections>
+                </viewController>
+                <customObject id="OT3-5v-GsR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="733"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
